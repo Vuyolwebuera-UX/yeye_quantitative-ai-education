@@ -1,0 +1,151 @@
+﻿RespondentID;Gender;Age;Institution;StudyLevel;FieldOfStudy;DeviceAccess;PrimaryAITool;UsesAI;AIUsageFrequency;AIToolSatisfaction;AILiteracy;PolicyAwareness;B1_LearningOutcomes;B2_PersonalisedFeedback;B3_Engagement;B4_Accessibility;B5_TimeSaving;C1_AcademicIntegrity;C2_DataPrivacy;C3_AlgorithmicBias;C4_UnequalAccess;C5_OverReliance
+1;Female;25;University of Free State;Doctoral;Computer Science;Laptop/PC;ChatGPT;1;4;3;3;3;4;4;3;3;4;4;3;4;2;2
+2;Male;22;North-West University;Second Year;Humanities;Laptop/PC;None;0;1;;1;2;4;2;3;4;3;2;2;3;2;4
+3;Male;20;CPUT;Masters;Business;Smartphone only;Google Gemini;1;4;5;3;2;3;4;1;4;2;3;4;3;3;2
+4;Female;23;CPUT;Doctoral;Education;Limited access;ChatGPT;1;3;5;2;2;4;3;2;3;4;2;3;3;3;4
+5;Male;22;North-West University;Honours;Humanities;Laptop/PC;Google Gemini;1;3;2;4;3;4;2;3;2;4;1;5;4;4;3
+6;Male;32;North-West University;Masters;Computer Science;Both;None;0;1;;2;4;2;2;2;1;2;3;3;3;2;3
+7;Female;21;UNISA;Third Year;Health Sciences;Both;Multiple tools;1;3;5;3;2;3;3;3;3;5;3;4;2;3;3
+8;Female;44;University of Free State;Masters;Computer Science;Smartphone only;None;0;1;;2;2;3;2;3;1;1;4;4;1;2;5
+9;Male;34;University of Cape Town;Honours;Humanities;Limited access;ChatGPT;1;2;3;4;3;2;3;4;3;3;4;3;2;3;5
+10;Female;36;UNISA;Second Year;Health Sciences;Limited access;ChatGPT;1;2;3;3;1;2;3;4;4;3;4;3;3;3;2
+11;Male;26;UNISA;Masters;Engineering;Limited access;ChatGPT;1;3;3;3;2;4;4;3;4;2;5;4;4;1;5
+12;Male;30;UNISA;Honours;Computer Science;Both;None;0;1;;3;2;3;2;2;1;3;2;2;3;3;3
+13;Female;34;University of Free State;Third Year;Computer Science;Laptop/PC;ChatGPT;1;2;3;3;1;2;3;4;3;4;3;4;2;3;3
+14;Male;30;University of Cape Town;Doctoral;Humanities;Laptop/PC;Google Gemini;1;5;4;2;4;4;3;4;3;3;1;4;3;3;3
+15;Male;35;UNISA;Third Year;Business;Both;Google Gemini;1;4;3;3;4;4;3;5;3;3;5;4;3;4;3
+16;Female;45;CPUT;Doctoral;Business;Smartphone only;ChatGPT;1;2;4;2;4;3;3;4;4;3;3;3;3;2;3
+17;Female;22;University of Cape Town;Masters;Computer Science;Limited access;ChatGPT;1;4;3;5;2;3;5;4;2;4;3;3;3;4;1
+18;Male;28;University of Free State;Second Year;Engineering;Limited access;Multiple tools;1;3;3;2;3;3;4;2;3;5;5;4;3;3;3
+19;Male;26;UNISA;First Year;Humanities;Smartphone only;None;0;1;;3;2;2;4;1;4;1;3;5;5;4;5
+20;Male;34;University of Cape Town;Honours;Business;Smartphone only;ChatGPT;1;2;3;2;2;3;3;3;3;4;3;3;1;3;2
+21;Male;31;CPUT;Doctoral;Business;Both;Microsoft Copilot;1;3;4;4;1;5;3;4;1;4;3;1;2;3;3
+22;Male;39;North-West University;Doctoral;Business;Laptop/PC;Microsoft Copilot;1;3;4;5;2;4;1;3;2;3;5;3;3;4;3
+23;Male;38;North-West University;Masters;Computer Science;Laptop/PC;Google Gemini;1;4;5;3;1;4;3;4;4;4;5;2;4;2;3
+24;Female;39;UNISA;First Year;Engineering;Both;None;0;1;;4;3;3;2;2;1;3;3;4;2;3;3
+25;Male;20;UNISA;Masters;Engineering;Both;ChatGPT;1;2;4;3;2;2;5;4;3;3;4;3;4;3;4
+26;Female;29;North-West University;First Year;Health Sciences;Both;Multiple tools;1;3;4;2;2;1;5;2;2;4;2;3;3;4;3
+27;Prefer not to say;35;UNISA;Second Year;Engineering;Smartphone only;None;0;1;;3;3;1;2;3;3;3;3;3;4;3;3
+28;Female;41;University of Free State;Honours;Business;Smartphone only;None;0;1;;2;2;2;3;3;1;2;1;3;3;4;3
+29;Female;23;University of Cape Town;Second Year;Engineering;Smartphone only;Multiple tools;1;5;4;3;4;4;4;2;2;1;3;1;5;4;4
+30;Male;31;University of Free State;First Year;Health Sciences;Both;ChatGPT;1;4;4;2;2;4;3;3;2;4;3;3;4;3;3
+31;Male;41;North-West University;Masters;Engineering;Both;ChatGPT;1;4;3;3;3;3;5;3;4;3;2;3;2;3;3
+32;Female;24;University of Free State;Third Year;Health Sciences;Smartphone only;ChatGPT;1;4;4;4;2;4;2;4;3;4;3;2;4;3;2
+33;Male;40;CPUT;Third Year;Engineering;Limited access;ChatGPT;1;5;3;3;2;3;4;4;3;2;3;3;4;2;3
+34;Male;40;UNISA;Second Year;Business;Laptop/PC;ChatGPT;1;3;4;4;5;4;4;3;3;3;4;2;4;2;2
+35;Male;20;University of Free State;Honours;Computer Science;Smartphone only;ChatGPT;1;5;3;2;4;4;1;4;3;2;3;2;2;3;2
+36;Female;24;University of Free State;First Year;Health Sciences;Laptop/PC;ChatGPT;1;5;4;3;3;4;4;4;3;3;2;4;3;3;3
+37;Female;24;CPUT;Third Year;Humanities;Limited access;ChatGPT;1;4;3;3;3;3;4;3;4;5;4;2;2;4;2
+38;Male;31;CPUT;Honours;Computer Science;Both;Google Gemini;1;3;3;3;1;4;4;3;2;2;3;3;3;2;1
+39;Male;44;CPUT;Third Year;Education;Limited access;None;0;1;;3;3;2;3;2;3;3;4;2;3;2;4
+40;Prefer not to say;30;University of Free State;Third Year;Business;Smartphone only;Google Gemini;1;4;3;4;2;2;3;4;4;3;2;3;2;1;2
+41;Male;18;UNISA;Second Year;Humanities;Limited access;ChatGPT;1;5;5;4;3;3;5;3;3;3;4;2;3;2;3
+42;Female;22;CPUT;Honours;Education;Smartphone only;ChatGPT;1;2;3;2;2;3;2;4;3;4;3;3;4;4;3
+43;Prefer not to say;25;UNISA;Honours;Business;Limited access;ChatGPT;1;2;3;3;1;3;3;3;3;2;4;2;2;2;4
+44;Female;32;University of Free State;First Year;Engineering;Smartphone only;Google Gemini;1;5;3;3;3;2;4;4;4;4;3;3;2;4;1
+45;Male;38;CPUT;Masters;Computer Science;Both;None;0;1;;3;3;1;2;2;3;3;4;2;2;1;5
+46;Male;39;CPUT;Second Year;Education;Laptop/PC;ChatGPT;1;5;4;2;4;4;5;4;3;3;4;3;2;3;3
+47;Female;36;North-West University;Second Year;Computer Science;Both;Google Gemini;1;3;5;3;2;3;4;4;3;2;4;3;4;1;2
+48;Female;41;University of Free State;Doctoral;Humanities;Limited access;Multiple tools;1;2;2;4;4;4;4;3;3;5;4;4;3;5;3
+49;Male;29;North-West University;First Year;Business;Laptop/PC;ChatGPT;1;5;2;3;3;3;5;4;3;1;3;1;2;4;2
+50;Male;25;University of Free State;First Year;Engineering;Limited access;None;0;1;;3;2;2;3;2;2;2;3;3;2;2;1
+51;Female;35;University of Free State;Second Year;Engineering;Both;None;0;1;;5;4;2;2;3;3;1;3;4;4;5;3
+52;Male;41;North-West University;Second Year;Engineering;Limited access;Microsoft Copilot;1;3;5;5;1;4;3;2;2;2;2;2;3;5;3
+53;Male;26;University of Cape Town;Third Year;Health Sciences;Laptop/PC;None;0;1;;5;3;4;2;3;3;1;2;4;3;5;3
+54;Male;45;CPUT;Masters;Education;Laptop/PC;ChatGPT;1;2;4;3;2;4;5;5;3;3;4;3;4;3;3
+55;Female;41;North-West University;First Year;Education;Smartphone only;Microsoft Copilot;1;5;3;3;4;4;3;3;4;4;4;3;3;2;2
+56;Female;32;University of Free State;Honours;Engineering;Smartphone only;Multiple tools;1;4;4;2;2;3;4;4;4;2;3;2;4;3;4
+57;Male;25;UNISA;Masters;Humanities;Limited access;ChatGPT;1;2;4;4;4;2;2;4;4;4;3;2;4;5;5
+58;Female;35;University of Free State;Second Year;Health Sciences;Both;Google Gemini;1;3;2;2;3;2;4;4;3;3;3;3;4;4;4
+59;Male;31;CPUT;First Year;Business;Smartphone only;Google Gemini;1;2;5;1;2;4;2;2;4;3;4;1;3;4;4
+60;Male;31;CPUT;First Year;Humanities;Limited access;ChatGPT;1;4;3;3;3;2;4;4;2;3;4;4;4;3;2
+61;Male;39;North-West University;First Year;Business;Limited access;Microsoft Copilot;1;4;4;3;2;5;3;4;3;3;4;5;3;2;3
+62;Female;44;UNISA;Masters;Humanities;Both;ChatGPT;1;2;3;2;4;3;3;5;3;4;3;2;2;3;3
+63;Female;25;North-West University;Third Year;Computer Science;Limited access;Microsoft Copilot;1;3;3;1;2;2;2;3;3;4;3;4;2;3;1
+64;Male;24;University of Free State;Second Year;Education;Laptop/PC;Google Gemini;1;4;2;3;1;3;2;4;4;2;4;3;2;4;2
+65;Female;43;North-West University;First Year;Engineering;Both;Microsoft Copilot;1;3;4;2;1;3;3;4;3;3;3;4;1;1;4
+66;Female;36;North-West University;Doctoral;Computer Science;Laptop/PC;ChatGPT;1;4;3;3;3;3;3;4;3;4;3;3;2;4;4
+67;Female;39;North-West University;Third Year;Engineering;Smartphone only;Multiple tools;1;4;3;4;3;4;3;3;4;4;3;5;2;2;4
+68;Male;40;North-West University;Doctoral;Humanities;Smartphone only;ChatGPT;1;3;3;3;3;2;4;4;2;4;2;3;2;3;2
+69;Prefer not to say;22;UNISA;Honours;Education;Smartphone only;ChatGPT;1;3;3;2;2;5;3;3;2;3;2;3;4;2;3
+70;Male;29;North-West University;Second Year;Humanities;Laptop/PC;None;0;1;;3;2;1;1;3;2;3;5;4;1;4;4
+71;Female;23;CPUT;Third Year;Engineering;Laptop/PC;Multiple tools;1;3;4;1;2;4;4;2;2;3;3;4;1;3;5
+72;Female;31;University of Cape Town;Second Year;Engineering;Smartphone only;ChatGPT;1;5;4;3;1;4;3;4;4;4;3;4;3;3;3
+73;Female;20;North-West University;Doctoral;Engineering;Smartphone only;ChatGPT;1;4;5;3;4;4;2;3;2;4;4;3;3;2;4
+74;Female;27;UNISA;Masters;Health Sciences;Limited access;ChatGPT;1;2;3;3;3;3;2;4;4;4;3;3;4;3;3
+75;Female;29;University of Cape Town;Honours;Business;Smartphone only;ChatGPT;1;4;3;3;1;3;2;4;2;3;4;1;2;4;5
+76;Male;43;University of Cape Town;Honours;Computer Science;Laptop/PC;Multiple tools;1;4;3;5;2;3;3;4;2;4;3;3;2;3;3
+77;Female;30;North-West University;Honours;Engineering;Both;None;0;1;;3;2;1;2;3;2;3;2;4;4;4;2
+78;Male;40;University of Cape Town;Doctoral;Business;Limited access;ChatGPT;1;4;2;3;2;2;4;3;1;2;3;2;2;5;4
+79;Male;20;North-West University;Masters;Humanities;Laptop/PC;Multiple tools;1;3;3;2;2;3;3;4;2;3;3;1;2;4;2
+80;Female;30;UNISA;First Year;Computer Science;Smartphone only;ChatGPT;1;4;5;3;3;3;4;4;3;4;3;5;4;1;4
+81;Female;27;University of Free State;Third Year;Humanities;Both;Multiple tools;1;4;3;4;1;3;3;2;2;2;3;3;3;4;3
+82;Female;20;CPUT;Masters;Education;Both;ChatGPT;1;2;4;2;1;3;2;3;4;3;3;3;3;2;3
+83;Female;19;CPUT;Second Year;Engineering;Smartphone only;Microsoft Copilot;1;3;5;2;2;2;3;4;4;3;5;3;3;4;4
+84;Female;36;UNISA;First Year;Health Sciences;Laptop/PC;ChatGPT;1;3;2;5;2;2;2;3;5;5;4;5;4;3;2
+85;Female;43;University of Cape Town;Masters;Business;Limited access;ChatGPT;1;5;2;4;3;4;3;4;2;4;4;4;2;5;3
+86;Male;21;University of Cape Town;Masters;Computer Science;Both;Microsoft Copilot;1;3;5;1;5;3;3;5;3;1;5;5;2;5;2
+87;Female;34;University of Free State;Honours;Computer Science;Limited access;None;0;1;;4;2;3;3;3;3;3;4;2;2;4;4
+88;Male;36;University of Free State;Honours;Business;Laptop/PC;ChatGPT;1;5;4;3;2;2;3;4;2;4;4;2;2;3;4
+89;Female;34;CPUT;Second Year;Education;Smartphone only;ChatGPT;1;4;3;4;3;4;4;3;3;2;3;2;4;5;5
+90;Female;18;University of Cape Town;Doctoral;Health Sciences;Both;ChatGPT;1;4;2;3;3;2;4;4;2;5;4;2;2;3;2
+91;Female;37;CPUT;Honours;Education;Limited access;ChatGPT;1;5;5;3;1;3;3;4;3;4;4;4;4;2;4
+92;Prefer not to say;33;University of Cape Town;Second Year;Health Sciences;Limited access;ChatGPT;1;3;3;3;2;3;4;5;3;4;4;2;2;2;2
+93;Female;33;UNISA;Third Year;Business;Both;Microsoft Copilot;1;2;5;5;3;1;2;3;2;2;3;4;2;2;4
+94;Male;44;North-West University;Doctoral;Business;Both;None;0;1;;3;3;3;2;2;2;2;4;5;2;3;4
+95;Prefer not to say;23;CPUT;Second Year;Computer Science;Limited access;Google Gemini;1;4;3;3;3;3;4;3;2;2;3;4;4;4;3
+96;Female;19;UNISA;Second Year;Engineering;Limited access;Multiple tools;1;4;2;4;2;4;5;4;3;4;4;1;2;3;4
+97;Male;41;University of Free State;Third Year;Education;Limited access;Google Gemini;1;3;4;3;2;4;3;3;3;4;3;3;2;2;2
+98;Female;18;University of Cape Town;Second Year;Engineering;Both;ChatGPT;1;3;3;4;1;3;3;3;4;3;3;3;3;3;2
+99;Male;25;University of Cape Town;Doctoral;Computer Science;Laptop/PC;None;0;1;;2;1;2;1;3;3;2;3;1;3;2;4
+100;Female;29;North-West University;First Year;Health Sciences;Smartphone only;None;0;1;;1;1;1;4;3;3;2;3;3;4;3;2
+101;Male;31;North-West University;Honours;Computer Science;Limited access;Microsoft Copilot;1;4;4;4;4;3;2;3;3;3;3;3;3;4;2
+102;Male;42;University of Cape Town;Honours;Computer Science;Laptop/PC;Multiple tools;1;4;3;3;2;4;3;1;4;2;5;4;2;3;2
+103;Female;42;UNISA;Masters;Education;Smartphone only;None;0;1;;4;1;3;1;3;2;3;4;4;3;4;4
+104;Male;21;UNISA;Masters;Computer Science;Smartphone only;Microsoft Copilot;1;3;5;2;4;3;2;2;3;3;2;4;3;2;5
+105;Male;22;University of Cape Town;Masters;Health Sciences;Laptop/PC;Microsoft Copilot;1;3;2;2;2;3;4;2;2;4;5;3;3;3;4
+106;Male;25;North-West University;Second Year;Health Sciences;Both;Multiple tools;1;4;4;4;2;4;4;4;4;4;3;4;2;4;3
+107;Male;37;University of Cape Town;Second Year;Computer Science;Smartphone only;Multiple tools;1;5;5;2;5;4;5;3;2;1;4;2;5;5;3
+108;Male;25;UNISA;Masters;Humanities;Both;Multiple tools;1;5;4;4;2;3;2;4;3;4;2;3;5;5;1
+109;Male;35;UNISA;Masters;Education;Limited access;ChatGPT;1;4;2;3;3;3;4;3;3;1;3;2;4;2;3
+110;Female;35;UNISA;Masters;Engineering;Smartphone only;Microsoft Copilot;1;4;4;3;4;4;3;3;3;3;4;3;3;3;3
+111;Male;35;North-West University;Masters;Engineering;Limited access;ChatGPT;1;2;4;3;4;3;3;4;3;4;2;4;1;4;3
+112;Prefer not to say;32;University of Cape Town;Honours;Computer Science;Laptop/PC;None;0;1;;4;2;2;3;4;3;1;4;2;4;4;3
+113;Female;45;University of Cape Town;Honours;Engineering;Smartphone only;Multiple tools;1;4;5;5;3;3;4;3;4;2;3;3;4;3;3
+114;Male;44;CPUT;First Year;Education;Limited access;None;0;1;;4;4;2;4;1;2;2;2;2;4;4;2
+115;Male;44;University of Free State;Third Year;Computer Science;Smartphone only;ChatGPT;1;4;3;4;1;3;1;2;4;4;4;4;3;2;5
+116;Male;22;University of Free State;Second Year;Humanities;Limited access;Google Gemini;1;4;4;3;2;4;2;3;3;4;4;3;2;4;3
+117;Female;37;University of Cape Town;First Year;Computer Science;Both;Multiple tools;1;3;4;3;3;4;3;4;2;1;2;3;4;3;2
+118;Male;25;University of Free State;Third Year;Engineering;Limited access;Microsoft Copilot;1;5;5;3;3;4;3;4;2;5;3;4;3;3;2
+119;Female;23;UNISA;Third Year;Health Sciences;Limited access;None;0;1;;2;1;2;4;2;2;2;4;4;2;4;4
+120;Prefer not to say;32;University of Free State;Doctoral;Health Sciences;Laptop/PC;Microsoft Copilot;1;5;5;2;4;3;5;4;2;2;4;3;2;3;2
+121;Female;43;North-West University;Masters;Humanities;Both;Google Gemini;1;4;3;3;3;3;4;3;3;3;4;5;4;4;2
+122;Male;25;University of Free State;Honours;Computer Science;Laptop/PC;Microsoft Copilot;1;5;4;2;3;2;4;3;3;3;4;4;4;4;3
+123;Male;41;North-West University;Honours;Business;Limited access;ChatGPT;1;3;4;2;1;3;3;5;4;4;3;2;4;5;3
+124;Male;39;UNISA;Second Year;Engineering;Limited access;ChatGPT;1;5;3;3;2;3;1;3;3;4;4;3;4;4;2
+125;Prefer not to say;28;CPUT;Doctoral;Engineering;Limited access;Google Gemini;1;2;4;4;2;4;2;3;4;2;4;2;2;4;3
+126;Male;37;CPUT;Doctoral;Education;Laptop/PC;Microsoft Copilot;1;4;5;2;1;2;4;2;3;4;3;4;4;4;5
+127;Female;31;CPUT;Honours;Health Sciences;Limited access;Microsoft Copilot;1;4;4;2;3;3;4;3;3;3;4;2;3;4;4
+128;Male;35;University of Free State;First Year;Health Sciences;Both;Microsoft Copilot;1;3;4;3;2;3;2;3;3;2;4;3;2;3;3
+129;Female;45;CPUT;Second Year;Education;Limited access;ChatGPT;1;3;3;1;4;3;4;4;3;4;3;4;2;3;3
+130;Prefer not to say;43;UNISA;Doctoral;Computer Science;Limited access;None;0;1;;3;2;4;2;4;3;2;5;4;1;3;2
+131;Male;43;North-West University;Honours;Engineering;Smartphone only;Microsoft Copilot;1;4;3;3;1;3;2;4;2;2;4;4;1;5;4
+132;Male;44;North-West University;Honours;Education;Both;ChatGPT;1;5;4;3;2;2;2;3;2;3;3;3;4;4;3
+133;Female;27;UNISA;Honours;Education;Laptop/PC;Multiple tools;1;4;4;3;3;3;3;3;3;3;2;4;3;3;1
+134;Female;18;CPUT;Masters;Education;Smartphone only;Google Gemini;1;2;5;2;3;4;4;1;3;3;4;4;3;3;2
+135;Male;36;UNISA;Second Year;Humanities;Smartphone only;Google Gemini;1;2;3;2;2;4;4;4;4;4;3;2;3;4;3
+136;Male;37;University of Free State;Second Year;Business;Both;Multiple tools;1;5;4;3;2;4;3;2;3;3;2;3;3;3;5
+137;Male;18;CPUT;Honours;Humanities;Both;None;0;1;;3;2;3;4;2;2;2;2;5;2;4;3
+138;Male;40;CPUT;First Year;Engineering;Limited access;Microsoft Copilot;1;4;4;3;1;2;4;3;3;4;4;5;2;4;4
+139;Male;20;UNISA;Honours;Humanities;Limited access;ChatGPT;1;4;4;2;3;3;3;3;3;2;4;3;3;3;2
+140;Female;21;University of Cape Town;Third Year;Education;Smartphone only;ChatGPT;1;3;4;3;1;2;4;3;5;2;3;3;3;4;3
+141;Male;45;University of Free State;Doctoral;Health Sciences;Smartphone only;ChatGPT;1;4;4;2;2;3;2;4;4;5;4;2;4;3;2
+142;Male;39;University of Cape Town;First Year;Health Sciences;Smartphone only;ChatGPT;1;3;3;2;2;4;1;4;3;2;4;4;2;3;3
+143;Female;35;UNISA;Masters;Engineering;Laptop/PC;ChatGPT;1;3;5;5;3;3;3;3;2;3;3;3;2;5;2
+144;Prefer not to say;22;University of Free State;Honours;Engineering;Both;ChatGPT;1;2;3;4;2;5;2;2;3;2;5;3;3;4;4
+145;Female;41;North-West University;Third Year;Business;Both;ChatGPT;1;5;4;4;3;3;3;4;4;5;3;3;3;4;2
+146;Male;39;University of Free State;Third Year;Computer Science;Both;Multiple tools;1;5;4;2;3;3;3;4;2;4;4;2;4;3;2
+147;Male;43;North-West University;Second Year;Computer Science;Laptop/PC;ChatGPT;1;2;3;3;3;4;5;4;3;4;2;4;3;3;1
+148;Male;45;UNISA;Doctoral;Engineering;Both;ChatGPT;1;3;3;2;3;3;3;4;3;3;2;2;4;2;5
+149;Male;35;North-West University;Doctoral;Business;Limited access;ChatGPT;1;3;3;3;1;2;3;4;4;5;2;3;3;2;5
+150;Male;23;University of Cape Town;Masters;Health Sciences;Smartphone only;ChatGPT;1;4;3;3;4;4;5;3;3;4;3;4;1;4;3
