@@ -3,6 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+st.write(df.columns)
 # Page config
 st.set_page_config(page_title="AI Impact on Students", layout="wide")
 
