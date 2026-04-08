@@ -3,70 +3,66 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-df = load_data()
-
-# Clean ALL column names
-df.columns = df.columns.str.strip()
-
-# Debug: show actual columns
-st.write("Columns in dataset:", df.columns)
-# Page config
+# Page config (MUST be at the top)
 st.set_page_config(page_title="AI Impact on Students", layout="wide")
 
-st.title("📊 Impact of AI on Tertiary Education")
-st.write("Exploratory Data Analysis Dashboard")
-
-# Load data
+# Load data FIRST
 @st.cache_data
 def load_data():
     df = pd.read_csv("Book1_Impact of AI Datatset.csv")
     return df
 
 df = load_data()
+
+# Clean column names
 df.columns = df.columns.str.strip()
-# Sidebar filters
+
+# Debug
+st.write("Columns in dataset:", df.columns)
+
+st.title("📊 Impact of AI on Tertiary Education")
+st.write("Exploratory Data Analysis Dashboard")
+
+# Sidebar
 st.sidebar.header("Filter Data")
 
-gender = st.sidebar.selectbox("Select Gender", ["All"] + list(df['Gender'].dropna().unique()))
+# Safe check
+if 'Gender' in df.columns:
+    gender = st.sidebar.selectbox("Select Gender", ["All"] + list(df['Gender'].dropna().unique()))
 
-if gender != "All":
-    df = df[df['Gender'] == gender]
+    if gender != "All":
+        df = df[df['Gender'] == gender]
+else:
+    st.warning("⚠️ 'Gender' column not found")
 
 # Show dataset
 st.subheader("Dataset Overview")
 st.dataframe(df.head())
 
-# --- SECTION 1: Missing Values ---
+# Missing values
 st.subheader("Missing Values")
-missing = df.isnull().sum()
-st.bar_chart(missing)
+st.bar_chart(df.isnull().sum())
 
-# --- SECTION 2: Distribution ---
+# Distribution
 st.subheader("Depression Score Distribution")
-
 fig, ax = plt.subplots()
 sns.histplot(df['todep'], kde=True, ax=ax)
 st.pyplot(fig)
 
-# --- SECTION 3: Anxiety vs Depression ---
+# Scatter plot
 st.subheader("Anxiety vs Depression")
-
 fig, ax = plt.subplots()
 sns.scatterplot(x=df['toas'], y=df['todep'], ax=ax)
-ax.set_xlabel("Anxiety Score")
-ax.set_ylabel("Depression Score")
 st.pyplot(fig)
 
-# --- SECTION 4: Social Support ---
+# Social support
 st.subheader("Social Support Impact")
-
 fig, ax = plt.subplots()
 sns.boxplot(x=df['friends'], y=df['todep'], ax=ax)
 st.pyplot(fig)
 
-# --- SECTION 5: Internet Usage ---
+# Internet
 st.subheader("Internet Usage vs Depression")
-
 fig, ax = plt.subplots()
 sns.boxplot(x=df['internet'], y=df['todep'], ax=ax)
 st.pyplot(fig)
