@@ -16,21 +16,34 @@ st.set_page_config(
 # =============================
 st.markdown("""
 <style>
+/* App background */
 .stApp {
     background-color: #f5f7fa;
 }
 
-h1 {
-    color: #2E86C1;
+/* Make ALL text dark */
+html, body, [class*="css"]  {
+    color: #1a1a1a !important;
 }
 
-h2, h3 {
-    color: #1F618D;
+/* Headings */
+h1, h2, h3 {
+    color: #1F618D !important;
 }
 
-.block-container {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+/* Sidebar */
+section[data-testid="stSidebar"] {
+    background-color: #ffffff;
+}
+
+/* Dataframe text */
+.stDataFrame {
+    color: #1a1a1a !important;
+}
+
+/* Metric text */
+[data-testid="stMetricValue"] {
+    color: #000000 !important;
 }
 </style>
 """, unsafe_allow_html=True)
