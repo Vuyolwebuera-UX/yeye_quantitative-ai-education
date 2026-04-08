@@ -3,7 +3,6 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-st.write(df.columns)
 # Page config
 st.set_page_config(page_title="AI Impact on Students", layout="wide")
 
@@ -17,14 +16,14 @@ def load_data():
     return df
 
 df = load_data()
-
+df.columns = df.columns.str.strip()
 # Sidebar filters
 st.sidebar.header("Filter Data")
 
-gender = st.sidebar.selectbox("Select Gender", ["All"] + list(df['gender'].dropna().unique()))
+gender = st.sidebar.selectbox("Select Gender", ["All"] + list(df['Gender'].dropna().unique()))
 
 if gender != "All":
-    df = df[df['gender'] == gender]
+    df = df[df['Gender'] == gender]
 
 # Show dataset
 st.subheader("Dataset Overview")
