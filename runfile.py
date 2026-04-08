@@ -3,196 +3,68 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-# =============================
-# PAGE CONFIG
-# =============================
-st.set_page_config(
-    page_title="AI Impact Dashboard",
-    layout="wide"
-)
+# Page config (MUST be first)
+st.set_page_config(page_title="AI Education EDA", layout="wide")
 
-# =============================
-# STYLE (LIGHT + CLEAN)
-# =============================
-st.markdown("""
-<style>
-/* App background */
-.stApp {
-    background-color: #f5f7fa;
-}
+st.title("📊 Impact of AI on Tertiary Education")
+st.write("Exploratory Data Analysis Dashboard")
 
-/* Make ALL text dark */
-html, body, [class*="css"]  {
-    color: #1a1a1a !important;
-}
-
-/* Headings */
-h1, h2, h3 {
-    color: #1F618D !important;
-}
-
-/* Sidebar */
-section[data-testid="stSidebar"] {
-    background-color: #ffffff;
-}
-
-/* Dataframe text */
-.stDataFrame {
-    color: #1a1a1a !important;
-}
-
-/* Metric text */
-[data-testid="stMetricValue"] {
-    color: #000000 !important;
-}
-</style>
-""", unsafe_allow_html=True)
-
-# =============================
-# LOAD DATA
-# =============================
+# Load data
 @st.cache_data
 def load_data():
     df = pd.read_excel("AI_Education_MockDataset.xlsx")
-    df.columns = df.columns.str.strip()
     return df
 
 df = load_data()
 
-# Debug (REMOVE later if you want)
-st.write("📌 Columns in dataset:", df.columns)
+# Clean column names
+df.columns = df.columns.str.strip().str.lower()
 
-# =============================
-# TITLE
-# =============================
-st.title("📊 AI Impact on Tertiary Education")
-st.write("Interactive Data Analysis Dashboard")
+# Debug: show columns
+st.subheader("📋 Columns in Dataset")
+st.write(df.columns)
 
-st.markdown("---")
+# Dataset preview
+st.subheader("📌 Data Preview")
+st.dataframe(df.head())
 
-# =============================
-# SIDEBAR FILTERS
-# =============================
-st.sidebar.header("🔎 Filters")
+# Sidebar
+st.sidebar.header("Filters")
 
-# Gender filter (safe)
+# Example filter (only if column exists)
 if 'gender' in df.columns:
-    gender_options = ["All"] + list(df['gender'].dropna().unique())
-    gender = st.sidebar.selectbox("Gender", gender_options)
+    gender = st.sidebar.selectbox(
+        "Select Gender",
+        ["All"] + list(df['gender'].dropna().unique())
+    )
 
     if gender != "All":
         df = df[df['gender'] == gender]
 
-# Age filter (safe)
-if 'age' in df.columns:
-    min_age = int(df['age'].min())
-    max_age = int(df['age'].max())
+# Missing values
+st.subheader("❗ Missing Values")
+st.bar_chart(df.isnull().sum())
 
-    age_range = st.sidebar.slider("Age Range", min_age, max_age, (min_age, max_age))
-    df = df[(df['age'] >= age_range[0]) & (df['age'] <= age_range[1])]
+# Summary stats
+st.subheader("📈 Summary Statistics")
+st.dataframe(df.describe())
 
-# =============================
-# KPI METRICS
-# =============================
-st.subheader("📌 Key Metrics")
-
-col1, col2, col3 = st.columns(3)
-
-with col1:
-    st.metric("📊 Total Records", len(df))
-
-with col2:
-    if 'todep' in df.columns:
-        st.metric("😔 Avg Depression", round(df['todep'].mean(), 2))
-
-with col3:
-    if 'toas' in df.columns:
-        st.metric("😰 Avg Anxiety", round(df['toas'].mean(), 2))
-
-st.markdown("---")
-
-# =============================
-# DATA PREVIEW
-# =============================
-st.subheader("📄 Dataset Preview")
-st.dataframe(df.head())
-
-st.markdown("---")
-
-# =============================
-# CHART STYLE
-# =============================
-sns.set_style("whitegrid")
-
-# =============================
-# VISUALS
-# =============================
-st.subheader("📊 Analysis")
-
-col1, col2 = st.columns(2)
-
-# Histogram
-with col1:
-    if 'todep' in df.columns:
-        st.write("📉 Depression Distribution")
-        fig, ax = plt.subplots()
-        sns.histplot(df['todep'], kde=True, color="#3498db", ax=ax)
-        st.pyplot(fig)
-
-# Scatter
-with col2:
-    if 'toas' in df.columns and 'todep' in df.columns:
-        st.write("📈 Anxiety vs Depression")
-        fig, ax = plt.subplots()
-        sns.scatterplot(x=df['toas'], y=df['todep'], color="#e74c3c", ax=ax)
-        ax.set_xlabel("Anxiety")
-        ax.set_ylabel("Depression")
-        st.pyplot(fig)
-
-st.markdown("---")
-
-# =============================
-# SOCIAL SUPPORT
-# =============================
-if 'friends' in df.columns and 'todep' in df.columns:
-    st.subheader("👥 Social Support Impact")
-
-    fig, ax = plt.subplots()
-    sns.boxplot(x=df['friends'], y=df['todep'], ax=ax)
-    st.pyplot(fig)
-
-st.markdown("---")
-
-# =============================
-# INTERNET USAGE
-# =============================
-if 'internet' in df.columns and 'todep' in df.columns:
-    st.subheader("🌐 Internet Usage vs Depression")
-
-    fig, ax = plt.subplots()
-    sns.boxplot(x=df['internet'], y=df['todep'], ax=ax)
-    st.pyplot(fig)
-
-st.markdown("---")
-
-# =============================
-# CORRELATION
-# =============================
-st.subheader("🔥 Correlation Analysis")
-
-fig, ax = plt.subplots(figsize=(10, 6))
-sns.heatmap(df.corr(numeric_only=True), cmap="coolwarm", ax=ax)
+# Correlation heatmap
+st.subheader("🔥 Correlation Heatmap")
+fig, ax = plt.subplots(figsize=(10,6))
+sns.heatmap(df.corr(numeric_only=True), annot=True, cmap="coolwarm", ax=ax)
 st.pyplot(fig)
 
-st.markdown("---")
+# Distribution plot
+st.subheader("📊 Distribution")
 
-# =============================
-# INSIGHTS
-# =============================
-st.subheader("🧠 Key Insights")
+numeric_cols = df.select_dtypes(include='number').columns
 
-st.write("""
-- Higher anxiety is linked to higher depression.
-- Social support can influence mental health.
-- Internet usage may affect student well-being.
-""")
+if len(numeric_cols) > 0:
+    selected_col = st.selectbox("Select variable", numeric_cols)
+
+    fig, ax = plt.subplots()
+    sns.histplot(df[selected_col].dropna(), kde=True, ax=ax)
+    st.pyplot(fig)
+else:
+    st.warning("No numeric columns found")
