@@ -3,6 +3,13 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
+df = load_data()
+
+# Clean ALL column names
+df.columns = df.columns.str.strip()
+
+# Debug: show actual columns
+st.write("Columns in dataset:", df.columns)
 # Page config
 st.set_page_config(page_title="AI Impact on Students", layout="wide")
 
